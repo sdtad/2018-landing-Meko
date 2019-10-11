@@ -1,0 +1,18 @@
+#Options All -Indexes
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^/?(.*) http://%1/$1 [L,R=permanent]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*(default|index|main)\.(html|php|htm)\ HTTP/ [NC]
+RewriteRule ^(([^/]+/)*)(default|main|index)\.(html|php|htm)$ http://meko.kiev.ua/$1 [L,R=301]
+
+RewriteRule ^(.*)\.html http://meko.kiev.ua/$1.php [R=301,L]
+
+

@@ -1,0 +1,38 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /z_advantages.php
+Disallow: /z_contacts.php
+Disallow: /z_footer.php
+Disallow: /z_form-slider.php
+Disallow: /z_header.php
+Disallow: /z_products.php
+Disallow: /z_services.php
+Disallow: /z_slider.php
+
+User-agent: Yandex
+Allow: /
+Disallow: /z_advantages.php
+Disallow: /z_contacts.php
+Disallow: /z_footer.php
+Disallow: /z_form-slider.php
+Disallow: /z_header.php
+Disallow: /z_products.php
+Disallow: /z_services.php
+Disallow: /z_slider.php
+Host: meko.kiev.ua
+
+User-agent: *
+Allow: /
+Disallow: /z_advantages.php
+Disallow: /z_contacts.php
+Disallow: /z_footer.php
+Disallow: /z_form-slider.php
+Disallow: /z_header.php
+Disallow: /z_products.php
+Disallow: /z_services.php
+Disallow: /z_slider.php
+
+Sitemap: http://meko.kiev.ua/sitemap.xml
+
+
+
